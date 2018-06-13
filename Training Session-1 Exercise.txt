@@ -1,0 +1,19 @@
+
+Case Study:
+指针练习，while+for loop搭配练习
+
+
+1. 打印100以内质数
+2. 打印100位斐波那契数列
+3. 给定一个列表[1,1,2,3,5,8,13] 打印如下内容：
+“ At position 0,
+       the element has value 1,
+       the cumulative sum is 1.
+       At position 1,
+       the element has value 1,
+       the cumulative sum is 1.
+                    ……
+                    ……
+        At position 6,
+        the element has value 13,
+        the cumulative sum is 33.”
