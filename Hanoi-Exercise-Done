@@ -9,3 +9,36 @@ def move(n, a, b, c):
         move(n-1, b, a, c) #再把B上的第n-1移到C
 
 move(3, 'A', 'B', 'C')
+
+这个程序的读法是：
+1. 行进行；
+2. 赋值考虑。
+
+n=3
+程序从else开始：
+move(2,a,c,b)---1
+move（1，a,b,c)---2
+move(2,b,a,c)---3
+
+之后 move---1, n=2 运行，再从头开始判定：
+move(1, a, c, b)
+move (1, a, b, c)
+move (1, b, a, c)
+
+这个时候考虑赋值，对于move---1 来说： a=a=A, b=c=B, c=b=C;
+A-C
+A-B
+C-B
+
+之后 move---2， n=1 运行：
+A-C
+
+最后move--3, n=2 运行，再一次进行判定：
+move(1, a, c, b)
+move（1，a, b, c)
+move(1, b, a, c）
+
+这个时候考虑赋值， 对于move---3 来说：a=b=A, b=a=B, c=c=C;
+B-A
+B-C
+A-C
